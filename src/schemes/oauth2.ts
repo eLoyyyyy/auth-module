@@ -418,7 +418,7 @@ export class Oauth2Scheme<
     }
 
     // Redirect to home
-    this.$auth.redirect('home', true)
+    this.$auth.redirect('home', process.client)
 
     return true // True means a redirect happened
   }
